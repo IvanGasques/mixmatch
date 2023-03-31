@@ -4,13 +4,16 @@
   grid-auto-flow: row;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin: 40px;
+  margin: 40px 0 0 0;
+  height:400px;
+  padding:30px
 }
 
 .card {
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align:center
 }
 
 .card:hover {
@@ -18,19 +21,27 @@
 }
 .card h2 {
   display: flex;
-  color: #916445;
+  color:  #d0d6ad;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .icon {
   display: flex;
   align-atems: center;
   height: 100px;
   justify-content: center;
-  color: #d0d6ad;
+  color:#CB9219;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 908px) {
+    .containerCard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .card h2 {
+      font-size:17px;
+    }
+    }
 }
 
 /* ajusta a altura do banner em telas ainda menores */
@@ -39,7 +50,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    margin: 20px;
+    margin: 0px;
   }
   .card {
     font-size: 10px;
@@ -47,5 +58,6 @@
   }
   .card h2 {
     color: #7c3b3d;
+    font-size:16px;
   }
 }
