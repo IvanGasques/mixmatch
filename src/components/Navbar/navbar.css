@@ -9,7 +9,7 @@
   float:right;
   padding:2rem;
   font-size:16px;
-  
+  margin:12rem 5rem;
 }
 
 .description h2{
@@ -23,6 +23,8 @@
     float:right;
     padding:0.8rem;
     font-size:12px;
+  margin:10rem 1rem;
+
   }
   
   .description h2{
@@ -37,8 +39,9 @@
         width: 9rem;
         height:12rem;
         float:right;
-        padding:0.6rem;
+        padding: 0.6rem;
         font-size:9px;
+        color:white;
       }
       
       .description h2{
