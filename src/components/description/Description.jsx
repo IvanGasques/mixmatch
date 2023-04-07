@@ -1,10 +1,20 @@
 import React from 'react'
 import img1 from '../../assets/-min.jpg'
 import img2 from '../../assets/pexels-vlada-karpovich-4050318.jpg'
+import { Parallax } from 'react-parallax';
+import foto1 from '../../assets/banner.jpg'
+import foto2 from '../../assets/galery/jon-tyson-eBN71NgyPU8-unsplash.jpg'
 import './description.css';
 
 const Description = () => {
-    return (
+    return (<>
+     <Parallax
+        bgImage={foto2}
+        height='320px'
+        bgImageAlt="Imagem de fundo"
+        strength={1200}>
+           <p className="parallax"></p> 
+        </Parallax>
         <div className='description1'>
             <div className='card1'>
 <img className='img1' src={img1} alt='moveis' />
@@ -18,6 +28,15 @@ const Description = () => {
             </div>
             
         </div>
+        <Parallax
+        
+            bgImage={foto1}
+            height='320px'
+            bgImageAlt="Imagem de fundo"
+            strength={500}>
+               <p className="parallax"></p> 
+            </Parallax>
+            </>
     )
 }
 

@@ -8,4 +8,7 @@
     background-position: center;
     will-change: opacity;
   }
+  #react-grid-gallery {
+    height: 800px;
+  }
   
