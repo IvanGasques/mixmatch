@@ -5,10 +5,11 @@ import './about.css';
 
 
 const About = () => {
+    
     return (
         <div className='aboutprincipal'>
 
-            <div className='about'>
+            <div className='about' id='text-focus-in'>
                 <h1>Sobre Mix and Match</h1>
                 <p>A Mix and Match é uma empresa especializada em renovação de móveis, que busca trazer vida aos objetos e transformá-los em peças únicas e personalizadas. Com uma equipe de profissionais experientes e dedicados, a empresa se destaca pela habilidade em encontrar móveis antigos e dar a eles o tratamento que precisam para se tornarem novos novamente.</p>
 
@@ -17,7 +18,7 @@ const About = () => {
                 <p>E, acima de tudo, a Mix and Match valoriza a sustentabilidade e o respeito ao meio ambiente em todo o seu trabalho.</p> */}
                 <div className='button'>Saber mais</div>
             </div>
-            <div><img className='foto' src={foto} alt='fotos' /></div>
+            <div><img className='foto' id='tilt-in-top-1' src={foto} alt='fotos' /></div>
         </div>
     )
 }
