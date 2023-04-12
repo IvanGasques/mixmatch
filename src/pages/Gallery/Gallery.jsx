@@ -15,7 +15,7 @@ export default function Galery2() {
 
             <br></br>
             <Gallery id="galeria"
-                images={Images}
-            /></>
+                images={Images}/>
+                </>
     );
 }

@@ -7,6 +7,7 @@ import Galery2 from './pages/Gallery/Gallery';
 import BasicExample from './components/Navbar/Navbar';
 
 import './App.css'
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
             <Route path="/galeria" element={<Galery2/>} />
             <Route exact path="/contactos" element={<Contact/>} />
           </Routes>
+          <Footer/>
         </BrowserRouter></div>
       );
     }

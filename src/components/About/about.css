@@ -34,6 +34,9 @@
   border: 1px solid white;
 
 }
+.button:active{
+  transform: scale(0.95);
+}
 .foto {
   width: 85%;
   padding: 90px 40px;

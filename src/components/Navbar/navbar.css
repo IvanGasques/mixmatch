@@ -1,3 +1,25 @@
+.navbar {
+  background-color: #A0522D;
+  color:azure;
+  text-decoration: none;
+}
+#drop{
+  color:#A0522D;
+}
+#drop:hover{
+  color:#D2B48C;
+}
+
+.test:hover{
+  color:#D2B48C;
+}
+.test,
+.test1,
+#basic-nav-dropdown,
+.nav-dropdown-item{
+  color:white;
+  text-decoration: none;
+}
 #nav {
   padding: 0 0 0 80%;
 }
