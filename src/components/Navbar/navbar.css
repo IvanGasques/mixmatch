@@ -2,12 +2,15 @@
   background-color: #A0522D;
   color:azure;
   text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
+  margin:0 0 3px 0;
 }
 #drop{
   color:#A0522D;
 }
 #drop:hover{
   color:#D2B48C;
+  background-color:#A0522D;
 }
 
 .test:hover{

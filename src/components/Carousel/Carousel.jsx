@@ -17,8 +17,8 @@ function CarouselFadeExample() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Mix and Match Blog</h3>
+          <p>Conteúdo útil e interessante abordando temas como técnicas de restauração... </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,8 +30,8 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Mix and Match Blog</h3>
+          <p> Traz a vida e elegancia que seus moveis precisa!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,7 +43,7 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Mix and Match Blog</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>

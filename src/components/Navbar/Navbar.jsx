@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 
 function BasicExample() {
   return (
-    <Navbar   expand="lg" bg-success>
+    <Navbar   expand="lg"  bg-success='true'>
       <Container>
         <Navbar.Brand href="#home"><Link to='/' className='test'>MIx and Match</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

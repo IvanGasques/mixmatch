@@ -11,13 +11,14 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Link } from 'react-router-dom';
 
 import './blog.css'
+import CarouselFadeExample from '../../components/Carousel/Carousel';
 
 export default function Blog() {
     return (
         <>
 
-
-            <h1 className='titleBlog' id='text-focus-in'> Nosso Blog</h1>
+<CarouselFadeExample/>
+            {/* <h1 className='titleBlog' id='text-focus-in'> Nosso Blog</h1> */}
             <ImQuotesLeft id="wobble-hor-bottom" className="aspasL" size={60} />
             <h5 className='subDescription' id='text-focus-in'>Nosso Blog tem como objetivo fornecer conteúdo útil e interessante para os clientes e visitantes do site, abordando temas como técnicas de restauração, cuidados com móveis antigos, tendências de decoração, histórias e curiosidades sobre móveis e muito mais. Além disso, o blog também pode ser usado para divulgar novidades sobre a empresa, como promoções, eventos e lançamentos de produtos.</h5>
             <ImQuotesRight id="wobble-hor-bottom" className="aspasR" size={60} />

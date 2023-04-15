@@ -1,0 +1,41 @@
+.adm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0.2, 0.2, 0.55);
+
+}
+.postAdm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.formPost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.titleAdm {
+  width: 100%;
+}
+.titlePost,
+.textCard {
+  height: 40px;
+  display: block;
+}
+.contentPost {
+  height: 200px;
+}
+.contentPost,
+.titlePost,
+.textCard{
+    border-radius:8px;
+    padding:4px;
+}

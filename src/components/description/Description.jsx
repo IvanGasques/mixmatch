@@ -10,7 +10,7 @@ const Description = () => {
     return (<>
      <Parallax
         bgImage={foto2}
-        height='320px'
+        height='380px'
         bgImageAlt="Imagem de fundo"
         strength={1200}>
            <p className="parallax"></p> 
@@ -31,7 +31,7 @@ const Description = () => {
         <Parallax
         
             bgImage={foto1}
-            height='320px'
+            height='0px'
             bgImageAlt="Imagem de fundo"
             strength={500}>
                <p className="parallax"></p> 
