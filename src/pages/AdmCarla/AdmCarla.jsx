@@ -1,34 +1,101 @@
-import React from 'react'
+import React, {  useRef } from 'react'
 import { useForm } from 'react-hook-form'
+import axios from 'axios'
 import './adm.css'
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup'
+
+
+const validationPost = yup.object().shape({
+    title: yup
+        .string()
+        .required("O título é obrigatório.")
+        .max(50, "O título deve ter no máximo 50 caracteres.")
+        .min(30, "O título deve ter no mínimo 30 caracteres para acompanhar o layout do card."),
+    content: yup
+        .string()
+        .required("O conteúdo é obrigatório.")
+        .min(150, "O conteúdo deve ter pelo menos 150 caracteres."),
+    description: yup
+        .string()
+        .required("A descrição é obrigatória.")
+        .max(130, "A descrição deve ter no máximo 130 caracteres.")
+        .min(100, "A descrição deve ter no mínimo 100 caracteres para acompanhar o layout do card."),
+    image: yup
+        .string()
+        .required("A imagem é obrigatória para a estética da página e o padrão do layout."),
+
+    senha: yup
+        .string()
+        .required("A senha é obrigatória.").min(9, 'Senha deve ter no mínimo 9 caracteres'),
+    
+})
+
+
+
+
+
 
 const AdmCarla = () => {
- 
-    const { register, handleSubmit, formState: { errors } } = useForm()
 
 
-const addPost = data => {return (console.log(data))}
+    const formRef = useRef();
+    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(validationPost )});
+
+
+
+    const addPost = data => {
+        const today = new Date();
+        const day = today.toLocaleDateString('pt');
+
+
+        // enviar uma requisição POST para a API com os dados do novo post
+        axios.post('http://localhost:3000/post', {
+            title: data.title,
+            content: data.content,
+            description: data.description,
+            day: day,
+            imagem: data.image
+        })
+            .then(response => {
+                console.log(response.data); // exibir a resposta da API
+                formRef.current.reset(); // limpar os campos do formulário
+            })
+            .catch(error => {
+                console.log(error); // lidar com possíveis erros
+            });
+    };
+
+
 
     return (
-        <div className='adm'>
-            <h1>Ola Carla</h1>
+                <div className='adm'>
+                    <h1>Ola Carla</h1>
+                    <div className='postAdm'>
+                        <h3 className='titleAdm'> Fazer um novo Post</h3><br />
 
-            <div className='postAdm'>
-                <h3 className='titleAdm'> Fazer um novo Post</h3><br />
-                
-                
-                <form className='formPost' onSubmit={handleSubmit(addPost)}>
-                <label>Titulo</label>
-                    <input className='titlePost' type='text' name='title' {...register('title')} placeholder='Digite o Título' /><hr />
-                    <label>Conteúdo do Post</label>
-                    <textarea className='contentPost' type='text' name='content'  {...register('content')}  placeholder='Digite o conteúdo' /><hr />
-                    {/* <input className='imagem' type="file" name="image" id="image-upload" /><hr /> */}
-                    <label> Conteúdo visivel no card</label>
-                    <input className='textCard' type='text' name='description' {...register('description')} placeholder='Pequeno texto para o card' maxLength="100" /><hr />
-                    <button type='submit' className='button' >Postar</button>
-                </form>
-            </div>
-        </div>
+                        <form className='formPost' onSubmit={handleSubmit(addPost)} ref={formRef}>
+                            <label>Titulo</label>
+                            <input className='titlePost' type='text' name='title' {...register('title')} placeholder='Digite o Título' maxLength="50" />
+                            <div className='error-message'>{errors.title?.message}</div><hr />
+
+                            <label>Imagem do Poste</label>
+                            <textarea className='titlePost' type='text' name='image'  {...register('image')} placeholder='Coloque o URL da imagem' />
+                            <p className='error-message'>{errors.image?.message}</p><hr />
+
+
+                            <label>Conteúdo do Post</label>
+                            <textarea className='contentPost' type='text' name='content'  {...register('content')} placeholder='Digite o conteúdo' />
+                            <p className='error-message'>{errors.content?.message}</p><hr />
+
+                            <label> Conteúdo visivel no card</label>
+                            <input className='textCard' type='text' name='description' {...register('description')} placeholder='Pequeno texto para o card' maxLength="128" />
+                            <p className='error-message'>{errors.description?.message}</p><hr />
+
+                            <button type='submit' className='button' >Postar</button>
+                        </form>
+                    </div>
+               </div>
     )
 }
 
