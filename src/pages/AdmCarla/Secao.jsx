@@ -32,7 +32,7 @@ const [pagePost, setPagePost] = useState('box')
 
     const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(validationPoste) });
 const validepass = (date) => {
-    if(date.password === "Carla1234"){
+    if(date.password === "000000000"){
         setPassConfirm(true)
          setPagePost('clean')
     }else{

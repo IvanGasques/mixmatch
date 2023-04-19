@@ -6,15 +6,18 @@ import Blog from '../../pages/blog/Blog';
 import {Link} from "react-router-dom"
 
 function BasicExample() {
+  
+
+
   return (
-    <Navbar   expand="lg"  bg-success='true'>
+    <Navbar     bg-success='true'>
       <Container>
         <Navbar.Brand href="#home"><Link to='/' className='test'>MIx and Match</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" id='nav'>
            
-            <NavDropdown title="Menu" id="basic-nav-dropdown"> 
+          <NavDropdown title="Menu" id="basic-nav-dropdown">
             <Link to='/' className='test1'><NavDropdown.Item id='drop' href="#home" >Home</NavDropdown.Item></Link>
             <Link to="/galeria" className='test1'><NavDropdown.Item id='drop'  href='jsx' alt='as'>Portifolio </NavDropdown.Item></Link>
               <Link to='/blog' className='test1'><NavDropdown.Item id='drop' href="#action/3.1">Blog</NavDropdown.Item></Link>

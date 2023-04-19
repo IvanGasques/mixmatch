@@ -5,7 +5,7 @@ import terc from '../../assets/pexels-cup-of-couple-7303151.jpg'
 import './carousel.css'
 import Carousel from 'react-bootstrap/Carousel';
 
-function Carousel1() {
+function Carousel2() {
   return (
     <div id='layout'>
     <Carousel nextIcon={null} prevIcon={null} nextLabel={null} 
@@ -19,8 +19,8 @@ function Carousel1() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Mix and Match Blog</h3>
-          <p>Conteúdo útil e interessante abordando temas como técnicas de restauração... </p>
+          <h3>Mix and Match Galeria</h3>
+          <p>Nosso portfólio de restauração de móveis apresenta uma ampla variedade de projetos em que trabalhamos </p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -34,8 +34,8 @@ function Carousel1() {
         />
 
         <Carousel.Caption>
-          <h3>Mix and Match Blog</h3>
-          <p> Traz a vida e elegancia que seus moveis precisa!</p>
+          <h3>Mix and Match Galeria</h3>
+          <p> desde peças clássicas de madeira até móveis modernos e estofados.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,9 +47,9 @@ function Carousel1() {
         />
 
         <Carousel.Caption>
-          <h3>Mix and Match Blog</h3>
+          <h3>Mix and Match Galeria</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Cada peça apresentada em nosso portfólio foi cuidadosamente restaurada para refletir seu design original
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -57,4 +57,4 @@ function Carousel1() {
   );
 }
 
-export default Carousel1;
+export default Carousel2;

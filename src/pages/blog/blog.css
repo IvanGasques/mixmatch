@@ -21,18 +21,24 @@
 .subDescription {
   display: flex;
   font-size:18px;
-  width:70%;
+  width:80%;
   border: 1px solid black;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
-  padding:25px;
-  margin: 0 15%;
+  text-align:center;
+  padding:16px;
+  margin: 4em 10%;
+  background-color:#fff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
-
+@media screen and (max-width: 450px) {
+  .subDescription {
+    font-size:14px
+  }
+}
 #cardBlog:hover{
   transform: scale(1.1);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);

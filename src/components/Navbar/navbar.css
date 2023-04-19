@@ -1,26 +1,27 @@
 .navbar {
-  background-color: #A0522D;
-  color:azure;
+  background-color: #a0522d;
+  color: azure;
   text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
-  margin:0 0 3px 0;
+  margin: 0 0 3px 0;
 }
-#drop{
-  color:#A0522D;
+#drop {
+  color: #a0522d;
+  background-color: white;
 }
-#drop:hover{
-  color:#D2B48C;
-  background-color:#A0522D;
+#drop:hover {
+  color: #d2b48c;
+  background-color: #a0522d;
 }
 
-.test:hover{
-  color:#D2B48C;
+.test:hover {
+  color: #d2b48c;
 }
 .test,
 .test1,
 #basic-nav-dropdown,
-.nav-dropdown-item{
-  color:white;
+.nav-dropdown-item {
+  color: white;
   text-decoration: none;
 }
 #nav {
@@ -30,61 +31,87 @@
 .description {
   border: 2px solid gray;
   width: 22rem;
-  height:23rem;
-  float:right;
-  padding:2rem;
-  font-size:16px;
-  margin:12rem 5rem;
+  height: 23rem;
+  float: right;
+  padding: 2rem;
+  font-size: 16px;
+  margin: 12rem 5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
-.description h2{
-    padding:1.5rem;
+.description h2 {
+  padding: 1.5rem;
 }
-@media screen and (max-width: 868px) {
-   
-.description {
-    width: 15rem;
-    height:16rem;
-    float:right;
-    padding:0.8rem;
-    font-size:12px;
-  margin:10rem 1rem;
-
+@media screen and (max-width: 650px) {
+  #nav {
+    margin-left: -310px;
+    left: auto;
+    right: 0;
   }
-  
-  .description h2{
-      padding:1.2rem;
-      font-size:18px;
+  #basic-nav-dropdown {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .description {
+    width: 15rem;
+    height: 16rem;
+    float: right;
+    padding: 0.8rem;
+    font-size: 12px;
+    margin: 6rem 1rem 35px;
+  }
+
+  .description h2 {
+    padding: 1.2rem;
+    font-size: 18px;
+  }
+  #nav {
+    margin-left: -40px;
+    left: auto;
+    right: 0;
+  }
+  #basic-nav-dropdown {
+    margin-left: 40px;
   }
 }
 
 /* ajusta a altura do banner em telas ainda menores */
 @media screen and (max-width: 480px) {
-    .description {
-        width: 9rem;
-        height:12rem;
-        float:right;
-        padding: 0.6rem;
-        font-size:9px;
-        color:white;
-        
-      }
-      
-      .description h2{
-          padding:0rem;
-          font-size:14px;
-      }
+  .description {
+    width: 9rem;
+    height: 12rem;
+    float: right;
+    padding: 0.6rem;
+    font-size: 9px;
+    color: white;
+    margin: 6rem 30px 15px;
+
+  }
+
+  .description h2 {
+    padding: 0rem;
+    font-size: 14px;
+  }
+  #nav {
+    margin-left: -110px;
+    left: auto;
+    right: 0;
+  }
+  #basic-nav-dropdown {
+    margin-left: 80px;
+  }
+  
 }
 
 /* ajusta a largura do banner em telas maiores */
 @media screen and (min-width: 1200px) {
-    .banner {
-        width: 100vw;
-        padding: 150px 100px;
-        margin: 0;
-
-    }
+  .banner {
+    width: 100vw;
+    padding: 150px 100px;
+    margin: 0;
+  }
 }

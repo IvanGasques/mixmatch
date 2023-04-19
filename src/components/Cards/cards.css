@@ -51,10 +51,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    margin: 0px;
+    margin: 0px 0 330px 0;
   }
   .card {
-    font-size: 10px;
+    font-size: 13px;
     padding: 12px;
   }
   .card h2 {

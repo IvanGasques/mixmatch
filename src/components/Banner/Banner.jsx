@@ -10,7 +10,7 @@ const Banner = () => {
       <Parallax className='banner'
         bgImage={foto}
         bgImageAlt="Imagem de fundo"
-        strength={400}
+        strength={500}
         style={{ padding: '0' }}
       >
         <DescriptionBanner />

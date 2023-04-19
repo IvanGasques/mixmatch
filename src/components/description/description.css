@@ -11,7 +11,7 @@
     padding:0;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
-    grid-template-rows: 1fr 1fr 0.6fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
     grid-gap: 20px;
     padding:10px 60px;
     justify-items:center;
@@ -52,11 +52,15 @@
   }
   .parallax{
     width:auto;
-    height:300px;
+    height:250px;
 }
-  @media screen and (max-width: 908px) {
+  @media screen and (max-width: 608px) {
    
-    
+    .description1{
+     
+      grid-template-rows: 1fr 0.3fr ;
+      
+    }
 }
 
 /* ajusta a altura do banner em telas ainda menores */
@@ -65,7 +69,7 @@
   .card2 {
     width:100%;
     height:auto;
-    font-size:11px;
+    font-size:14px;
   }
   .card1 h3 {
     font-size:13px;
@@ -74,6 +78,11 @@
     padding:10px;
     margin:0;
     background-position: 36% 10%;
+    grid-template-rows: 1fr 0.1fr ;
     
   }
+  .parallax{
+    width:auto;
+    height:100px;
+}
 }

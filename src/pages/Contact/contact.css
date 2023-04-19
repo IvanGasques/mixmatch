@@ -1,14 +1,234 @@
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    will-change: opacity;
+/* default styles */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-location h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  margin: -70px 0 20px 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #0059b3;
+}
+
+/* media queries */
+@media only screen and (max-width: 450px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  
   }
-  #react-grid-gallery {
-    height: 800px;
+  .contact-location{
+    margin-bottom:50px;
+  }
+  .dona-box {
+    max-width: 100%;
   }
   
+  .dona-box img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .dona-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dona-box p {
+    font-size: 16px;
+  }
+  .contato-item{
+    weight:100%;
+  }
+  #svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .contato-item span {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+  .contato-container {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  }
+  
+  .dona-container {
+  margin-top: 40px;
+  }
+  #svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .dona-box {
+  padding: 30px;
+  }
+  
+  .dona-box img {
+  width: 130px;
+  height: 130px;
+  }
+  }
+  
+  /* Tornando o layout responsivo para mais de 1200px */
+  
+  @media only screen and (min-width: 1201px) {
+  .contato-container {
+  gap: 120px;
+  }
+  
+  .dona-box {
+  max-width: 500px;
+  margin-top: 50px;
+  }
+  }
+  
+  /* ---------------------------------------------------------------------- */
+  
+  .contato-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  }
+  
+  .contato-box h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align:center;
+  }
+  
+  .contato-info {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .contato-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  }
+  
+  #svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  }
+  
+  .contato-item span {
+  font-size: 18px;
+  }
+  
+  .dona-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  }
+  
+  .dona-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  }
+  
+  .dona-box img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  }
+  
+  .dona-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  }
+  
+  .dona-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  }
