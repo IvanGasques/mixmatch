@@ -10,10 +10,6 @@ import { Parallax } from 'react-parallax';
 import foto1 from '../../assets/blog.jpg'
 import axios from 'axios';
 
-import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
-
-import { Link } from 'react-router-dom';
-
 import './blog.css'
 import CarouselFadeExample from '../../components/Carousel/Carousel';
 
@@ -27,14 +23,13 @@ export default function Blog() {
             .then(response => {
                 console.log(response.data[3]);
                 setApiPost(response.data)
-                const imagens = response.data
             })
             .catch(error => {
                 console.log(error);
             });
     }, []);
 
-    const url = `https://lh3.googleusercontent.com/pw/AJFCJaUHRNOPe9A7u_tqpCgWbEuayEWbY2nj3oJMqQFyHdrdTJxtW7y9p0IGFFCVxWFq6N78adZ27S3jycHB-trLOQYxHZLcsoVGK3TEuSrDt3K06aa1M3KIYUhlJMWt2ylUBuAjabFBmfT9h8T4xFGS3Xbr=w1140-h733-s-no?authuser=0.jpg`
+    
 
     return (
         <>

@@ -36,8 +36,8 @@ const Contact = () => {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-        <p>Rua do Exemplo, nº 123</p>
-        <p>Bairro do Exemplo</p>
+        <p></p>
+        <p></p>
         <p>Maputo</p>
       </div>
       <div className="contact-form">

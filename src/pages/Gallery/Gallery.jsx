@@ -1,5 +1,6 @@
-
+import React, {useEffect,useState} from 'react'
 import { Gallery } from "react-grid-gallery";
+import axios from 'axios';
 import Images from "./images";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Parallax } from 'react-parallax';
@@ -10,6 +11,21 @@ import '../blog/blog.css'
 import Carousel2 from "../../components/Carousel/Carousel2";
 
 export default function Galery() {
+
+    const [apiImage, setApiImage] = useState([]);
+
+// const imagens = <img src={apiImage.imagem+".png"} alt={apiImage.id} />
+    useEffect(() => {
+        axios.get('http://localhost:3000/galeria')
+            .then(response => {
+                setApiImage(response.data.img)
+                console.log(response.data)
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }, []);
+
     return (
         <>
         <Carousel2/>
@@ -25,7 +41,7 @@ export default function Galery() {
 
             <br></br>
             <Gallery id="galeria"
-                images={Images}/>
+                images={apiImage}/>
                 </>
     );
 }

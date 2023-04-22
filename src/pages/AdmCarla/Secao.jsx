@@ -49,13 +49,13 @@ const validepass = (date) => {
                     <input className='titlePost' type='text' name='name' {...register('name')} placeholder='Digite o Nome' maxLength="30" />
                     <div className='error-message'>{errors.name?.message}</div><hr />
 
-                    <label>Imagem do Poste</label>
+                    <label>Password</label>
                     <input className='titlePost' name="password" type="password"  {...register("password")} placeholder='Password' />
                     <p className='error-message'>{errors.password?.message}</p><hr />
 
 
                     <img src={mixmatxh} alt='Foto de Carla ' />
-                    <button type='submit' className='button' >Postar</button>
+                    <button type='submit' className='button' >Entrar</button>
                 </form>
     </div>
     {passConfirm? (<AdmCarla/>

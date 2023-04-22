@@ -1,12 +1,12 @@
 .contentBlog {
   display: flex;
-  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
   height: auto;
   justify-content: space-evenly;
-  margin: 80px;
+  margin: 5%;
+  gap:20px;
 }
 
 .titleBlog {
@@ -146,3 +146,11 @@
       0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
+/* 
+- colocar carousel mais rapido
+- posicionar melhoe navbar
+-fazer adm para colocar imagem na galeria
+-fazer pagina blog
+-sobre nos
+ */
+

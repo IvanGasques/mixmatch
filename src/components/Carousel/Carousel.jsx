@@ -9,8 +9,8 @@ function Carousel1() {
   return (
     <div id='layout'>
     <Carousel nextIcon={null} prevIcon={null} nextLabel={null} 
-      prevLabel={null} fade >
-      <Carousel.Item >
+      prevLabel={null} fade id='carousel' >
+      <Carousel.Item id='carousel-item' >
         <img
           className="d-block w-90 "
           height="800"

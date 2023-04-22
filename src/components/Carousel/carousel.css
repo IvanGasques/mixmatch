@@ -14,4 +14,11 @@
       display: none;
     }
   }
+  #carousel-item {
+    transition-duration: 1s;
+  }
+  
+  #carousel {
+    interval: 1000ms;
+  }
   
