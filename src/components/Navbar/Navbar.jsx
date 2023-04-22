@@ -12,7 +12,7 @@ function BasicExample() {
   return (
     <Navbar     bg-success='true'>
       <Container>
-        <Navbar.Brand href="#home"><Link to='/' className='test'>MIx and Match</Link></Navbar.Brand>
+        <Navbar.Brand href="#home"><Link to='/'  className='test'>Mix and Match</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" id='nav'>

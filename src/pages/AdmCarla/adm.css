@@ -14,6 +14,9 @@
 .clean .adme{
   display: none;
 }
+#buttonAdm{
+  width:200px;
+}
 .adme {
   display: flex;
   flex-direction: column;
@@ -152,4 +155,51 @@ padding:0;
 }
 .title-atuais{
   text-align:center;
+}
+@media screen and (max-width: 480px) {
+  .button{
+    width:100%;
+    padding:5px
+  }
+  .adme,
+  .adm{
+    width:80%;
+    margin:50px 10%;
+  }
+  .adm{
+    height:auto;
+  }
+  .contentPost{
+    height:100px;
+  }
+  .container-BTN .button{
+    width:30%;
+  }
+  .post-adm{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0
+  }
+  .postAdm,
+  .show-galery
+  {
+    width:96%;
+    margin:3%;
+  }
+  #galery{
+    width:70%;
+  }
+  .container-img{
+    height:300px;
+  }
+  .container-img{
+    height:90%;
+  }
+  .btn-deldete{
+    margin:0px,
+  }
+  /* .container-img{
+    width:50%;
+  } */
 }

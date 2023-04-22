@@ -6,3 +6,57 @@
     width:100%;
     font-family: 'Vollkorn', 
 }
+.pagesBlog{
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:5%
+}
+.titleBlog {
+    font-size: 3.5em;
+    text-align:center;
+}
+.day{
+    width:85%;
+    margin:0 auto;
+}
+.img-blog{
+    width:100%;
+    padding:0 50px;
+}
+.content{
+    width:50%;
+    font-size:20px;
+}
+.content h3{
+    display:flex;
+    margin:200px 0;
+    align-items:end;
+}
+@media screen and (max-width: 480px) {
+    .pagesBlog{
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+    }
+    .titleBlog {
+        font-size: 2em;
+        text-align:center;
+    }
+    .content{
+        width:90%;
+        font-size:17px;
+        margin:40px 5%;
+    }
+    .content h3{
+        display:flex;
+        margin:20px 0;
+        align-items:end;
+    }
+    .img-blog{
+        width:100%;
+    }
+   
+}

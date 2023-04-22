@@ -14,6 +14,7 @@ const validationImage = yup.object().shape({
 const AdmGallery = () => {
 
     const [apiImage, setApiImage] = useState([]);
+    const [update, setUpdate] = useState([]);
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [deleteItem, setDeleteItem] = useState(false);
 
@@ -31,7 +32,6 @@ const AdmGallery = () => {
                 console.log(response.data); // exibir a resposta da API
                 formRef.current.reset(); 
                 setFormSubmitted(true)
-               
             })
             .catch(error => {
                 console.log(error); // lidar com possíveis erros
@@ -55,15 +55,14 @@ const AdmGallery = () => {
     };
 
     useEffect(() => {
-        axios.get('http://localhost:3000/galeria')
+        axios.get('http://localhost:3000/galeria/')
             .then(response => {
-                console.log(response.data[3]);
                 setApiImage(response.data)
             })
             .catch(error => {
                 console.log(error);
             });
-    }, [addImage, deleteItem]);
+    }, [formSubmitted, deleteItem]);
 
 
 
@@ -87,7 +86,7 @@ const AdmGallery = () => {
             {apiImage.map((imagem, index) => (
                 <div className='container-img' key={index}>
                     {/* <p >{imagem.id}</p> */}
-                    <div className='imageAdm'><img src={imagem.img+'.jpg'} alt={imagem.id} /></div>
+                    <div className='imageAdm'><img src={imagem.img+".jpg"} alt='imagem galeria'/> </div>
                     <button className='btn-delete' onClick={() => handleDelete(imagem.id)}>Delete</button>
                </div>
            ) )}</div>

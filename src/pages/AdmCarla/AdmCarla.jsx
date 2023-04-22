@@ -109,8 +109,8 @@ const AdmCarla = () => {
         
     <>
     <div className="container-BTN">
-    <button className='button' onClick={ShowPost}>Adm Post</button>
-    <button className='button' onClick={ShowGalery}>Adm Galeria</button>
+    <button className='button' id='buttonAdm' onClick={ShowPost}>Adm Post</button>
+    <button className='button' id='buttonAdm' onClick={ShowGalery}>Adm Galeria</button>
 </div>
     {showPost? (<>
         <div className='adm'>

@@ -1,7 +1,26 @@
 #galeria {
   margin: 80px;
+  width: auto;
+ 
+  height: auto;
 }
 
+/* .react-grid-gallery .image img {
+  transform: scale(1.5);
+} */
+
+/* #galeria img{
+   object-fit: cover;
+   width:100%;
+}
+
+  #galeria img:hover{
+   transform: scale(1.2);
+   margin:1em;
+   width:680px;
+   height:800px;
+  
+} */
 
 
 #subDescription {
