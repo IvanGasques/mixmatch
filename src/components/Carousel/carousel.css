@@ -1,27 +1,25 @@
-#layout{
-    display:flex;
-    justify-content:center;
-    width:50%;
-    margin:20px auto;
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-#layout img{
-    width:100%;
-    height:auto;
-    scale:1.2
+
+.carousel-img {
+  object-fit: cover;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto 30px;
 }
-@media screen and (max-width: 600px) {
-    .carousel-caption {
-      display: none;
-    }
- #layout{
-  width:100%;
- }
-  #carousel-item {
-    transition-duration: 1s;
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+    padding: 0 20px;
   }
   
-  #carousel {
-    interval: 1000ms;
+  .carousel-img {
+    height: 50vh;
   }
- }
+}
+
   

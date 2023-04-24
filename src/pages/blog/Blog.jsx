@@ -8,6 +8,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Parallax } from 'react-parallax';
 import foto1 from '../../assets/blog.jpg'
+import { Link } from "react-router-dom"
+import { Clipboard } from 'react';
+
+
 import axios from 'axios';
 
 import './blog.css'
@@ -29,7 +33,13 @@ export default function Blog() {
             });
     }, []);
 
-    
+    const handleShare = () => {
+        Clipboard.writeText('URL do conteúdo');
+        alert('Link copiado para a área de transferência!');
+      }
+      
+      
+      
 
     return (
         <>
@@ -55,7 +65,7 @@ export default function Blog() {
                                 component="img"
                                 alt="green iguana"
                                 height="160"
-                                image={post.imagem + '.jpg'}
+                                image={post.imagem+".jpg"}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -67,8 +77,8 @@ export default function Blog() {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="medium">Compartilhar</Button>
-                                <Button size="medium">Ver mais</Button>
+                               
+                               <Link className='link' to={`/pagina/${post.id}`}> <Button id='button2' size="medium">Ver mais</Button></Link>
                             </CardActions>
                         </Card>
                     </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 import mixmatxh from '../../assets/|| COVER MIX&MATCH ||.png'
+import img1 from '../../assets/galery/cd1.jpg'
+import img2 from '../../assets/galery/cd2.jpg'
+import img3 from '../../assets/galery/cd3.jpg'
 
 
 const Allme = () => {
@@ -18,22 +21,22 @@ const Allme = () => {
       <h2 className="allme-subtitle">Nossos serviços</h2>
       <ul className="allme-services">
         <li className="allme-service">
-          <img src="https://via.placeholder.com/150" alt="Serviço de pintura" className="allme-service-img" />
+          <img src={img1} alt="Serviço de pintura" className="allme-service-img" />
           <h3 className="allme-service-title">Pintura</h3>
           <p className="allme-service-description">Nossos profissionais utilizam técnicas modernas de pintura para renovar móveis antigos e dar um toque de cor e estilo a cada peça.</p>
         </li>
         <li className="allme-service">
-          <img src="https://via.placeholder.com/150" alt="Serviço de restauração" className="allme-service-img" />
+          <img src={img2} alt="Serviço de restauração" className="allme-service-img" />
           <h3 className="allme-service-title">Restauração</h3>
           <p className="allme-service-description">Utilizamos técnicas avançadas de restauração para revitalizar móveis desgastados pelo tempo e devolvê-los à sua beleza original.</p>
         </li>
         <li className="allme-service">
-          <img src="https://via.placeholder.com/150" alt="Serviço de customização" className="allme-service-img" />
+          <img src={img3} alt="Serviço de customização" className="allme-service-img" />
           <h3 className="allme-service-title">Customização</h3>
           <p className="allme-service-description">Transformamos móveis simples em peças únicas e personalizadas, de acordo com as preferências e estilo de cada cliente.</p>
         </li>
       </ul>
-      <a href="www.google.com" className="button" >Saiba mais</a>
+      
 
       <div className='mix'><img src={mixmatxh} alt='Foto de Carla ' /></div>
     </div>

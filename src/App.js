@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Secao from './pages/AdmCarla/Secao';
 import Contactos from './pages/Contact/Mycomponent';
 import axios from 'axios';
+import Allme from './components/About/Allme';
 
 function App() {
   const [dados, setDados] = useState([]);
@@ -39,7 +40,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/blog" element={<Blog />} />
-          <Route path="/quemsomos" element={<App />} />
+          <Route path="/quemsomos" element={<Allme/>} />
           <Route path="/galeria" element={<Galery2 />} />
           <Route path="/admcarla" element={<Secao />} />
           <Route exact path="/contactos" element={<Contactos />} />

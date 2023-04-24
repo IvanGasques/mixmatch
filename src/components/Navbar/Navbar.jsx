@@ -5,6 +5,7 @@ import './navbar.css'
 import Blog from '../../pages/blog/Blog';
 import {Link} from "react-router-dom"
 
+
 function BasicExample() {
   
 
@@ -21,7 +22,7 @@ function BasicExample() {
             <Link to='/' className='test1'><NavDropdown.Item id='drop' href="#home" >Home</NavDropdown.Item></Link>
             <Link to="/galeria" className='test1'><NavDropdown.Item id='drop'  href='jsx' alt='as'>Portifolio </NavDropdown.Item></Link>
               <Link to='/blog' className='test1'><NavDropdown.Item id='drop' href="#action/3.1">Blog</NavDropdown.Item></Link>
-              <Link to='/sobrenos' className='test1'><NavDropdown.Item id='drop' href="#action/3.2">
+              <Link to="/quemsomos" className='test1'><NavDropdown.Item id='drop' href="#action/3.2">
                 Sobre Nós
               </NavDropdown.Item></Link>
               <Link to='/contactos' className='test1'><NavDropdown.Item id='drop' href="#action/3.3">Contacto</NavDropdown.Item></Link>
