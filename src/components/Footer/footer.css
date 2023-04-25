@@ -26,6 +26,7 @@
   height: 50px;
   align-items: center;
   color: white;
+  
 }
 
 .footer-1cont {
@@ -48,6 +49,13 @@
 .footer-3cont p:hover {
   color: #a0522d;
   cursor: pointer;
+}
+.link{
+  text-decoration:none;
+  color:black;
+}
+.link:hover{
+  color:#a0522d;
 }
 .footer-1cont:active,
 .icons:active,

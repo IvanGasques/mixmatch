@@ -29,7 +29,7 @@ const Cards = () => {
       
       <p className='icon'><FaRecycle size="76px"/></p>
         <h2>Cuidado e Preservação</h2>
-        <p> Confie seus móveis a uma empresa especializada em preservação do patrimônio, com preços justos e transparentes. </p>
+        <p> Confie seus móveis a uma empresa especializada em preservação do patrimônio, reciclagem criativa e com preços justos e transparentes. </p>
     </div>
     </div>
   )

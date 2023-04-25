@@ -194,6 +194,7 @@ span {
   }
   .button{
   margin: 20px auto;
+  width:180px
   }
   .aboutprincipal{
     align-items:center;
@@ -217,7 +218,7 @@ font-size:17px;
   }
     .button{
       margin: 15px auto;
-      width:auto;
+      
     }
     #btn-all{
 width:40%;

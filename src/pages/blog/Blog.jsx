@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import { Parallax } from 'react-parallax';
 import foto1 from '../../assets/blog.jpg'
 import { Link } from "react-router-dom"
-import { Clipboard } from 'react';
 
 
 import axios from 'axios';
@@ -33,11 +32,7 @@ export default function Blog() {
             });
     }, []);
 
-    const handleShare = () => {
-        Clipboard.writeText('URL do conteúdo');
-        alert('Link copiado para a área de transferência!');
-      }
-      
+  
       
       
 

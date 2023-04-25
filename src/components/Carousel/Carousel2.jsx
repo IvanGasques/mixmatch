@@ -6,9 +6,14 @@ import './carousel.css'
 import Carousel from 'react-bootstrap/Carousel';
 
 function Carousel2() {
+
+
+
+
   return (
     <div id='layout'>
       <Carousel
+        interval={2000}
         nextIcon={null}
         prevIcon={null}
         nextLabel={null}

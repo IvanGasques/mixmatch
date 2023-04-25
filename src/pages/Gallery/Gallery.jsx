@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Gallery } from "react-grid-gallery";
-import axios from 'axios';
-import Images from "./images";
-import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Parallax } from 'react-parallax';
 import foto1 from '../../assets/galeria.jpg'
 

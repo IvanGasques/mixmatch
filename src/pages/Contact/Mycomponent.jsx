@@ -13,15 +13,15 @@ const Contactos = () => {
           <div className="contato-info">
             <div className="contato-item">
               <FaPhoneAlt id='svg'/>
-              <span>Telefone: (00) 0000-0000</span>
+              <span>+258 84 29 23 411</span>
             </div>
             <div className="contato-item">
               <FaEnvelope id='svg'/>
-              <span>E-mail: contato@empresa.com</span>
+              <span>mixandmatchmozambique@gmail.com</span>
             </div>
             <div className="contato-item">
               <FaInstagram id='svg'/>
-              <span>Instagram: @empresa</span>
+              <span>Instagram: @mix_match_mz</span>
             </div>
           </div>
         </div>

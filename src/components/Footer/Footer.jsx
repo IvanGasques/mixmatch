@@ -1,6 +1,8 @@
 import React from 'react'
 import  {FaInstagram, FaRegEnvelope, FaRegComments}  from "react-icons/fa";
 import './footer.css'
+import {Link} from "react-router-dom"
+
 
 const Footer = () => {
   return (
@@ -10,28 +12,30 @@ const Footer = () => {
 
       <div className='footer-1'>
       <div className='footer-1cont'>
-       <p >Mix and Match</p> 
+       <p ><Link className='link' to="/quemsomos">Mix and Match</Link></p> 
         <p>"Transformamos móveis esquecidos em obras de arte com personalidade! Dê vida nova aos seus móveis antigos com nossos serviços de restauração."</p>
       </div></div>
 
 <div className='footer-2'>
 <div className='footer-2cont'>
-<p>> Portifolio</p>
-<p>> Blog</p>
-<p>> Contacto</p>
-<p>> Portifolio</p>
+<p><Link  className='link' to="/galeria" > > Portifolio</Link></p>
+<p><Link  className='link' to='/blog' > > Blog</Link></p>
+<p> <Link  className='link' to='/contactos' > > Contacto</Link></p>
+<p><Link  className='link' to="/quemsomos"> > Quem somos</Link> </p>
 </div>
 </div>
 
 <div className='footer-3'>
 <div className='footer-3cont'>
 <div className='icone'>
-<FaInstagram className='icons' size={25} />
-<FaRegEnvelope className='icons' size={27}/>
+<a Href='https://www.instagram.com/mix_match_mz/' className='link'><FaInstagram className='icons' size={25} /></a>
+<a href="mailto:mixandmatchmozambique@gmail.com" className='link' target="_blank" rel="noopener noreferrer"><FaRegEnvelope className='icons' size={27}/></a>
 <FaRegComments className='icons' size={28}/></div>
-<p>email.mixmatch@gmail.com</p>
-<p>Tlm: 999 000 111</p>
-<p>Maputo xxx LLL</p>
+<p><a href="mailto:mixandmatchmozambique@gmail.com" className='link' target="_blank" rel="noopener noreferrer">mixandmatchmozambique@gmail.com</a></p>
+<p>Tlm: +258 84 29 23 411
+</p>
+<p>Maputo | Mozambique
+</p>
 </div>
 </div>
     </div>

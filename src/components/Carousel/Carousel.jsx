@@ -10,6 +10,7 @@ function Carousel1() {
     <div id='layout'>
       <Carousel
         nextIcon={null}
+        interval={2000}
         prevIcon={null}
         nextLabel={null}
         prevLabel={null}
